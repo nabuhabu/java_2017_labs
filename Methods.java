@@ -12,19 +12,24 @@ public class Methods {
 			throw new IllegalArgumentException("n>0 required");
 		double res = 1;
 		double cur_el = n;
-		if ((n % 2) == 0) {
+// 		if ((n % 2) == 0) {
 	
-			while (cur_el >= 2) {
-				res *= cur_el;
-				cur_el -= 2;
-			}
+// 			while (cur_el >= 2) {
+// 				res *= cur_el;
+// 				cur_el -= 2;
+// 			}
 
-		} else {
+// 		} else {
 			
-			while (cur_el >= 1) {
-				res *= cur_el;
-				cur_el -= 2;
-			}
+// 			while (cur_el >= 1) {
+// 				res *= cur_el;
+// 				cur_el -= 2;
+// 			}
+// 		}
+		while(cur_el>=1)
+		{
+			res *= cur_el;
+			cur_el -= 2;
 		}
 		return res;
 	}
